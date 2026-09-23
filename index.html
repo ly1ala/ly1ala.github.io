@@ -1,1068 +1,971 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <!-- Materialize CSS -->
-  <link rel="stylesheet"
-    href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-    href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-
-  <title>Shengya Huang | Computer Engineering Student</title>
-
-  <meta name="author" content="Shengya Huang" />
-  <meta name="description"
-    content="I am a fourth-year ECE student at the University of Toronto. I am currently taking ECE444 course." />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title"
-    content="Shengya Huang | Computer Engineering Student" />
-  <meta property="og:description"
-    content="I am a fourth-year ECE student at the University of Toronto. I am currently taking ECE444 course." />
-
-  <meta name="theme-color" content="#E8D5D8" />
-  <meta name="robots" content="index, follow" />
-</head>
-
-<body>
-
-  <!-- ==================== NAVIGATION ==================== -->
-
-  <!-- Desktop Navigation -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-
-      <li class="logo">
-        <a id="logo-container"
-          aria-label="Navigate to the beginning of the page"
-          href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/Lyla.jpg"
-            class="circle img-responsive profile-pic"
-            alt="Shengya Huang profile picture">
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#about"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-social-person small"></i>
-          <span>About</span>
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#experience"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-action-trending-up small"></i>
-          <span>Experience</span>
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#projects"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-av-my-library-books small"></i>
-          <span>Projects</span>
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#skills"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-action-assessment small"></i>
-          <span>Skills</span>
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#education"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-social-school small"></i>
-          <span>Education</span>
-        </a>
-      </li>
-      <li class="bold">
-      <a href="#travel"
-    class="waves-effect waves-dark teal-text">
-    <i class="mdi-maps-place small"></i>
-    <span>Places Travelled</span>
-  </a>
-</li>
-
-      <li class="bold">
-        <a href="#contact"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-content-mail small"></i>
-          <span>Contact</span>
-        </a>
-      </li>
-
-    </ul>
-  </nav>
-
-
-  <!-- Mobile Navigation Header -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle mobile navigation"
-      href="#"
-      data-activates="slide-out"
-      class="button-collapse">
-      <i class="mdi-navigation-menu"></i>
-    </a>
-
-    <div class="name-title">
-      <a id="name"
-        href="#intro"
-        class="teal-text">
-        Shengya Huang
-      </a>
-      <span class="black-text">Computer Engineering</span>
-    </div>
-  </nav>
-
-
-  <!-- Mobile Navigation Menu -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-
-      <li class="bold">
-        <a href="#about"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-social-person small"></i>
-          <span>About</span>
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#experience"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-action-trending-up small"></i>
-          <span>Experience</span>
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#projects"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-av-my-library-books small"></i>
-          <span>Projects</span>
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#skills"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-action-assessment small"></i>
-          <span>Skills</span>
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#education"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-social-school small"></i>
-          <span>Education</span>
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#travel"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-maps-place small"></i>
-          <span>Places Travelled</span>
-        </a>
-      </li>
-
-      <li class="bold">
-        <a href="#contact"
-          class="waves-effect waves-dark teal-text">
-          <i class="mdi-content-mail small"></i>
-          <span>Contact</span>
-        </a>
-      </li>
-
-    </ul>
-  </nav>
-
-
-  <!-- ==================== MAIN CONTENT ==================== -->
-
-  <main>
-
-    <!-- ==================== INTRO ==================== -->
-
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-
-      <div class="container">
-        <div class="col-md-9">
-
-          <div class="content section-padding valign"
-            style="margin-left: 10%; margin-top: 50px;">
-
-            <div class="caption">
-
-              <h2>
-                Hi, I'm
-                <span class="teal">Shengya Huang.</span>
-              </h2>
-
-              <h5 style="color:#1D1D1F">
-                A
-                <span class="typing"
-                  style="font-weight: 300; color:#1D1D1F">
-                </span>
-              </h5>
-
-              <h5>
-                I am a fourth-year student at the University of Toronto. I am currently taking ECE444 course.
-              </h5>
-
-            </div>
-
-
-            <div class="social">
-
-              <a href="https://www.linkedin.com/in/shengyaHuang"
-                target="_blank"
-                aria-label="View Shengya Huang on LinkedIn">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-
-              <a href="https://github.com/ly1ala"
-                target="_blank"
-                aria-label="View Shengya Huang on GitHub">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-
-            </div>
-
-
-            <div class="buttons">
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ==================== ABOUT ==================== -->
-
-    <section id="about" class="section scrollspy">
-
-      <h3 class="page-title white-text teal">About</h3>
-
-      <div class="container flow-text">
-
-        <p>
-          Hi, I'm Shengya Huang. I am a Computer Engineering student at
-          the University of Toronto with dual minors in Artificial
-          Intelligence and Business.
-        </p>
-
-        <p>
-          I enjoy exploring new programming concepts and learning new
-          technologies. My interests include software development,
-          artificial intelligence, machine learning, embedded systems,
-          and web development.
-        </p>
-
-        <p>
-          Through my university projects and professional experience,
-          I have worked with technologies including C++, Python,
-          Verilog, JavaScript, MySQL, FPGA development, and machine
-          learning.
-        </p>
-
-      </div>
-
-    </section>
-
-
-    <!-- ==================== EXPERIENCE ==================== -->
-
-    <section id="experience" class="section scrollspy">
-
-      <h3 class="page-title white-text teal">Experience</h3>
-
-      <div class="container">
-
-
-        <!-- Toronto Water -->
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <div class="experience-header">
-
-  <img
-    src="/assets/img/city-of-toronto.png"
-    alt="City of Toronto Logo"
-    class="experience-logo toronto-logo"
-  >
-
-  <div class="experience-heading">
-
-    <span class="card-title teal-text">
-      City of Toronto - Toronto Water
-    </span>
-
-    <div class="experience-role">
-      IT Trainee
-    </div>
-
-  </div>
-
-</div>
-
-
-
-            <div class="experience-divider">
-
-            </div>
-
-            <ul>
-
-              <li>
-                Developed and enhanced internal web pages for Toronto
-                Water, improving access to company information by
-                implementing a Python-based company search feature.
-              </li>
-
-              <li>
-                Built and organized a centralized network information
-                database using MySQL and developed a web interface to
-                visualize and manage network data efficiently.
-              </li>
-
-              <li>
-                Redesigned and refined the user interface to improve
-                usability and navigation, making internal tools more
-                intuitive and user-friendly.
-              </li>
-
-              <li>
-                Documented and organized Wi-Fi and network
-                infrastructure information, including network
-                configurations and device records.
-              </li>
-
-              <li>
-                <b>Tools:</b>
-                Python, MySQL, HTML, CSS, JavaScript
-              </li>
-
-            </ul>
-
-          </div>
-
-          <div class="card-action">
-            <span>
-              May 2025 - May 2026 | Toronto, ON, Canada
-            </span>
-          </div>
-
-        </div>
-
-
-        <!-- GIS Application -->
-
-        <div class="card">
-          <div class="card-content">
-
-          <div class="experience-header">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>Shengya Huang | Computer Engineering Student</title>
+
+    <meta name="author" content="Shengya Huang" />
+    <meta
+      name="description"
+      content="I am a fourth-year ECE student at the University of Toronto. I am currently taking ECE444 course."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Shengya Huang | Computer Engineering Student"
+    />
+    <meta
+      property="og:description"
+      content="I am a fourth-year ECE student at the University of Toronto. I am currently taking ECE444 course."
+    />
+
+    <meta name="theme-color" content="#E8D5D8" />
+    <meta name="robots" content="index, follow" />
+  </head>
+
+  <body>
+    <!-- ==================== NAVIGATION ==================== -->
+
+    <!-- Desktop Navigation -->
+    <nav class="hide-on-small-only">
+      <ul class="side-nav fixed section table-of-contents">
+        <li class="logo">
+          <a
+            id="logo-container"
+            aria-label="Navigate to the beginning of the page"
+            href="#intro"
+            class="brand-logo grey-blue-text"
+          >
             <img
-              src="/assets/img/uoft.png"
-              alt="University of Toronto Logo"
-              class="experience-logo"
+              src="/assets/img/Lyla.jpg"
+              class="circle img-responsive profile-pic"
+              alt="Shengya Huang profile picture"
+            />
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#about" class="waves-effect waves-dark teal-text">
+            <i class="mdi-social-person small"></i>
+            <span>About</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#experience" class="waves-effect waves-dark teal-text">
+            <i class="mdi-action-trending-up small"></i>
+            <span>Experience</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#projects" class="waves-effect waves-dark teal-text">
+            <i class="mdi-av-my-library-books small"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#skills" class="waves-effect waves-dark teal-text">
+            <i class="mdi-action-assessment small"></i>
+            <span>Skills</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#education" class="waves-effect waves-dark teal-text">
+            <i class="mdi-social-school small"></i>
+            <span>Education</span>
+          </a>
+        </li>
+        <li class="bold">
+          <a href="#travel" class="waves-effect waves-dark teal-text">
+            <i class="mdi-maps-place small"></i>
+            <span>Places Travelled</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#pet" class="waves-effect waves-dark teal-text">
+            <i class="mdi-action-favorite small"></i>
+            <span>My Pet</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#contact" class="waves-effect waves-dark teal-text">
+            <i class="mdi-content-mail small"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Navigation Header -->
+    <nav class="hide-on-large only trigger z-depth-1">
+      <a
+        aria-label="Toggle mobile navigation"
+        href="#"
+        data-activates="slide-out"
+        class="button-collapse"
+      >
+        <i class="mdi-navigation-menu"></i>
+      </a>
+
+      <div class="name-title">
+        <a id="name" href="#intro" class="teal-text"> Shengya Huang </a>
+        <span class="black-text">Computer Engineering</span>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="hide-on-large only">
+      <ul id="slide-out" class="side-nav">
+        <li class="bold">
+          <a href="#about" class="waves-effect waves-dark teal-text">
+            <i class="mdi-social-person small"></i>
+            <span>About</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#experience" class="waves-effect waves-dark teal-text">
+            <i class="mdi-action-trending-up small"></i>
+            <span>Experience</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#projects" class="waves-effect waves-dark teal-text">
+            <i class="mdi-av-my-library-books small"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#skills" class="waves-effect waves-dark teal-text">
+            <i class="mdi-action-assessment small"></i>
+            <span>Skills</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#education" class="waves-effect waves-dark teal-text">
+            <i class="mdi-social-school small"></i>
+            <span>Education</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#travel" class="waves-effect waves-dark teal-text">
+            <i class="mdi-maps-place small"></i>
+            <span>Places Travelled</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#pet" class="waves-effect waves-dark teal-text">
+            <i class="mdi-action-favorite small"></i>
+            <span>My Pet</span>
+          </a>
+        </li>
+
+        <li class="bold">
+          <a href="#contact" class="waves-effect waves-dark teal-text">
+            <i class="mdi-content-mail small"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+
+    <main>
+      <!-- ==================== INTRO ==================== -->
+
+      <section id="intro" class="section scrollspy full-height">
+        <div class="overlay"></div>
+
+        <div class="container">
+          <div class="col-md-9">
+            <div
+              class="content section-padding valign"
+              style="margin-left: 10%; margin-top: 50px"
             >
+              <div class="caption">
+                <h2>
+                  Hi, I'm
+                  <span class="teal">Shengya Huang.</span>
+                </h2>
 
-            <div class="experience-heading">
+                <h5 style="color: #1d1d1f">
+                  A
+                  <span class="typing" style="font-weight: 300; color: #1d1d1f">
+                  </span>
+                </h5>
 
-              <span class="card-title">
+                <h5>
+                  I am a fourth-year student at the University of Toronto. I am
+                  currently taking ECE444 course.
+                </h5>
+              </div>
+
+              <div class="social">
                 <a
-                  href="https://github.com/VNLAc/Public-Washroom-Finding-Map"
+                  href="https://www.linkedin.com/in/shengyaHuang"
                   target="_blank"
-                  class="teal-text hoverline"
+                  aria-label="View Shengya Huang on LinkedIn"
                 >
-                  GIS Application Developer Project
+                  <button class="icon-btn linkedin">
+                    <i class="fa fa-linkedin"></i>
+                  </button>
                 </a>
-              </span>
 
-              <div class="experience-role">
-                University of Toronto
+                <a
+                  href="https://github.com/ly1ala"
+                  target="_blank"
+                  aria-label="View Shengya Huang on GitHub"
+                >
+                  <button class="icon-btn github">
+                    <i class="fa fa-github"></i>
+                  </button>
+                </a>
               </div>
 
-            </div>
-
-          </div>
-
-          <div class="experience-divider">
-
-          </div>
-
-            <ul>
-
-              <li>
-                Developed a Geographic Information System application
-                in C++ for locating public washrooms.
-              </li>
-
-              <li>
-                Used OpenStreetMap as the application database and
-                implemented map functionality similar to Google Maps.
-              </li>
-
-              <li>
-                Improved application performance by refining
-                algorithms and optimizing function structures,
-                achieving response times under 500 ms and a 5x
-                speed increase.
-              </li>
-
-              <li>
-                Designed and integrated visual elements using EZGL,
-                GTK, and Glade.
-              </li>
-
-              <li>
-                Used Git to support parallel development in CLion
-                and VS Code.
-              </li>
-
-              <li>
-                Implemented VPN, SSH, and virtual machine technologies
-                to establish a remote working environment.
-              </li>
-
-              <li>
-                <b>Tools:</b>
-                C++, Git, OpenStreetMap, EZGL, GTK, Glade, SSH
-              </li>
-
-            </ul>
-
-          </div>
-
-          <div class="card-action">
-            <span>
-              Jan 2024 - May 2024 | University of Toronto
-            </span>
-          </div>
-
-        </div>
-
-
-        <!-- Dog Breed Detector -->
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <div class="experience-header">
-
-              <img
-                src="/assets/img/uoft.png"
-                alt="University of Toronto Logo"
-                class="experience-logo"
-              >
-
-              <div class="experience-heading">
-
-                <span class="card-title">
-                  <a
-                    href="https://github.com/VNLAc/Dog-Breed-Detector"
-                    target="_blank"
-                    class="teal-text hoverline"
-                  >
-                    Dog Breed Detector Project
-                  </a>
-                </span>
-
-                <div class="experience-role">
-                  University of Toronto
-                </div>
-
+              <div class="buttons">
+                <a href="#about" class="readme">Read More</a>
+                <a href="#contact" class="contactme">Contact Me</a>
               </div>
-
             </div>
-
-            <div class="experience-divider">
-
-            </div>
-
-            <ul>
-
-              <li>
-                Developed a dog breed identification model using
-                Convolutional Neural Networks.
-              </li>
-
-              <li>
-                Used the Stanford Dogs dataset for training and
-                collected hundreds of raw images for real-world
-                testing.
-              </li>
-
-              <li>
-                Used Single Shot Detection to improve data processing
-                speed by approximately 5x.
-              </li>
-
-              <li>
-                Tuned model parameters to optimize model performance.
-              </li>
-
-              <li>
-                Achieved 87% accuracy in real-world testing.
-              </li>
-
-              <li>
-                <b>Tools:</b>
-                Python, PyTorch, NumPy, CNN, SSD
-              </li>
-
-            </ul>
-
           </div>
-
-          <div class="card-action">
-            <span>
-              May 2024 - Aug 2024 | University of Toronto
-            </span>
-          </div>
-
         </div>
+      </section>
 
-      </div>
+      <!-- ==================== ABOUT ==================== -->
 
-    </section>
+      <section id="about" class="section scrollspy">
+        <h3 class="page-title white-text teal">About</h3>
 
+        <div class="container flow-text">
+          <p>
+            Hi, I'm Shengya Huang. I am a Computer Engineering student at the
+            University of Toronto with dual minors in Artificial Intelligence
+            and Business.
+          </p>
 
-    <!-- ==================== PROJECTS ==================== -->
+          <p>
+            I enjoy exploring new programming concepts and learning new
+            technologies. My interests include software development, artificial
+            intelligence, machine learning, embedded systems, and web
+            development.
+          </p>
 
-    <section id="projects" class="section scrollspy">
-
-      <h3 class="page-title white-text teal">Projects</h3>
-
-      <div class="container">
-
-        <!-- NEW DYNAMIC PROJECTS -->
-        <div id="projects-container" class="row"></div>
-
-          <button
-            id="load-more-btn"
-            onclick="loadMoreProjects()">
-            Load More
-          </button>
-
-      </div>
-
-    </section>
-
-
-    <!-- ==================== SKILLS ==================== -->
-
-    <section id="skills" class="section scrollspy">
-
-      <h3 class="page-title white-text teal">Skills</h3>
-
-      <div class="container">
-
-
-        <!-- Programming Languages -->
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <h4 class="brown-text light">
-              Programming Languages
-            </h4>
-
-            <p>
-              C++ &nbsp; | &nbsp;
-              C &nbsp; | &nbsp;
-              Python &nbsp; | &nbsp;
-              Verilog &nbsp; | &nbsp;
-              MATLAB &nbsp; | &nbsp;
-              Java &nbsp; | &nbsp;
-              TypeScript &nbsp; | &nbsp;
-              JavaScript &nbsp; | &nbsp;
-              HTML &nbsp; | &nbsp;
-              SQL &nbsp; | &nbsp;
-              R
-            </p>
-
-          </div>
-
+          <p>
+            Through my university projects and professional experience, I have
+            worked with technologies including C++, Python, Verilog, JavaScript,
+            MySQL, FPGA development, and machine learning.
+          </p>
         </div>
+      </section>
 
+      <!-- ==================== EXPERIENCE ==================== -->
 
-        <!-- AI / Machine Learning -->
+      <section id="experience" class="section scrollspy">
+        <h3 class="page-title white-text teal">Experience</h3>
 
-        <div class="card">
+        <div class="container">
+          <!-- Toronto Water -->
 
-          <div class="card-content">
+          <div class="card">
+            <div class="card-content">
+              <div class="experience-header">
+                <img
+                  src="/assets/img/city-of-toronto.png"
+                  alt="City of Toronto Logo"
+                  class="experience-logo toronto-logo"
+                />
 
-            <h4 class="brown-text light">
-              AI & Machine Learning
-            </h4>
-
-            <p>
-              PyTorch &nbsp; | &nbsp;
-              NumPy &nbsp; | &nbsp;
-              Convolutional Neural Networks &nbsp; | &nbsp;
-              Single Shot Detection &nbsp; | &nbsp;
-              Google Colab &nbsp; | &nbsp;
-              Kaggle
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <!-- Development Tools -->
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <h4 class="brown-text light">
-              Development Tools
-            </h4>
-
-            <p>
-              Git &nbsp; | &nbsp;
-              GitHub &nbsp; | &nbsp;
-              VS Code &nbsp; | &nbsp;
-              CLion &nbsp; | &nbsp;
-              Quartus &nbsp; | &nbsp;
-              ModelSim &nbsp; | &nbsp;
-              FPGA &nbsp; | &nbsp;
-              Jupyter Notebook &nbsp; | &nbsp;
-              Android Studio
-            </p>
-
-          </div>
-
-        </div>
-
-
-        <!-- Other -->
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <h4 class="brown-text light">
-              Other Technologies
-            </h4>
-
-            <p>
-              MySQL &nbsp; | &nbsp;
-              OpenStreetMap &nbsp; | &nbsp;
-              GIS &nbsp; | &nbsp;
-              Figma &nbsp; | &nbsp;
-              AutoCAD &nbsp; | &nbsp;
-              Unity
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ==================== EDUCATION ==================== -->
-
-    <section id="education" class="section scrollspy">
-
-      <h3 class="page-title white-text teal">Education</h3>
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col s12 m12 l12">
-
-            <div class="card">
-
-              <div class="card-content">
-
-                <p>
-
-                  <span class="card-title">
-
-                    <a
-                      href="https://www.utoronto.ca/"
-                      target="_blank"
-                      class="teal-text hoverline">
-
-                      University of Toronto
-
-                    </a>
-
+                <div class="experience-heading">
+                  <span class="card-title teal-text">
+                    City of Toronto - Toronto Water
                   </span>
 
-                </p>
-
-                <p class="brown-text">
-                  Toronto, ON, Canada
-                </p>
-
-                <p>
-
-                  <b>Degree:</b>
-                  Bachelor of Computer Engineering
-
-                  <br>
-
-                  <b>Minors:</b>
-                  Artificial Intelligence and Business
-
-                  <br>
-
-                  <b>Study Period:</b>
-                  September 2022 - Expected April 2026
-
-                </p>
-
+                  <div class="experience-role">IT Trainee</div>
+                </div>
               </div>
 
+              <div class="experience-divider"></div>
+
+              <ul>
+                <li>
+                  Developed and enhanced internal web pages for Toronto Water,
+                  improving access to company information by implementing a
+                  Python-based company search feature.
+                </li>
+
+                <li>
+                  Built and organized a centralized network information database
+                  using MySQL and developed a web interface to visualize and
+                  manage network data efficiently.
+                </li>
+
+                <li>
+                  Redesigned and refined the user interface to improve usability
+                  and navigation, making internal tools more intuitive and
+                  user-friendly.
+                </li>
+
+                <li>
+                  Documented and organized Wi-Fi and network infrastructure
+                  information, including network configurations and device
+                  records.
+                </li>
+
+                <li>
+                  <b>Tools:</b>
+                  Python, MySQL, HTML, CSS, JavaScript
+                </li>
+              </ul>
             </div>
 
+            <div class="card-action">
+              <span> May 2025 - May 2026 | Toronto, ON, Canada </span>
+            </div>
           </div>
 
+          <!-- GIS Application -->
+
+          <div class="card">
+            <div class="card-content">
+              <div class="experience-header">
+                <img
+                  src="/assets/img/uoft.png"
+                  alt="University of Toronto Logo"
+                  class="experience-logo"
+                />
+
+                <div class="experience-heading">
+                  <span class="card-title">
+                    <a
+                      href="https://github.com/VNLAc/Public-Washroom-Finding-Map"
+                      target="_blank"
+                      class="teal-text hoverline"
+                    >
+                      GIS Application Developer Project
+                    </a>
+                  </span>
+
+                  <div class="experience-role">University of Toronto</div>
+                </div>
+              </div>
+
+              <div class="experience-divider"></div>
+
+              <ul>
+                <li>
+                  Developed a Geographic Information System application in C++
+                  for locating public washrooms.
+                </li>
+
+                <li>
+                  Used OpenStreetMap as the application database and implemented
+                  map functionality similar to Google Maps.
+                </li>
+
+                <li>
+                  Improved application performance by refining algorithms and
+                  optimizing function structures, achieving response times under
+                  500 ms and a 5x speed increase.
+                </li>
+
+                <li>
+                  Designed and integrated visual elements using EZGL, GTK, and
+                  Glade.
+                </li>
+
+                <li>
+                  Used Git to support parallel development in CLion and VS Code.
+                </li>
+
+                <li>
+                  Implemented VPN, SSH, and virtual machine technologies to
+                  establish a remote working environment.
+                </li>
+
+                <li>
+                  <b>Tools:</b>
+                  C++, Git, OpenStreetMap, EZGL, GTK, Glade, SSH
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-action">
+              <span> Jan 2024 - May 2024 | University of Toronto </span>
+            </div>
+          </div>
+
+          <!-- Dog Breed Detector -->
+
+          <div class="card">
+            <div class="card-content">
+              <div class="experience-header">
+                <img
+                  src="/assets/img/uoft.png"
+                  alt="University of Toronto Logo"
+                  class="experience-logo"
+                />
+
+                <div class="experience-heading">
+                  <span class="card-title">
+                    <a
+                      href="https://github.com/VNLAc/Dog-Breed-Detector"
+                      target="_blank"
+                      class="teal-text hoverline"
+                    >
+                      Dog Breed Detector Project
+                    </a>
+                  </span>
+
+                  <div class="experience-role">University of Toronto</div>
+                </div>
+              </div>
+
+              <div class="experience-divider"></div>
+
+              <ul>
+                <li>
+                  Developed a dog breed identification model using Convolutional
+                  Neural Networks.
+                </li>
+
+                <li>
+                  Used the Stanford Dogs dataset for training and collected
+                  hundreds of raw images for real-world testing.
+                </li>
+
+                <li>
+                  Used Single Shot Detection to improve data processing speed by
+                  approximately 5x.
+                </li>
+
+                <li>Tuned model parameters to optimize model performance.</li>
+
+                <li>Achieved 87% accuracy in real-world testing.</li>
+
+                <li>
+                  <b>Tools:</b>
+                  Python, PyTorch, NumPy, CNN, SSD
+                </li>
+              </ul>
+            </div>
+
+            <div class="card-action">
+              <span> May 2024 - Aug 2024 | University of Toronto </span>
+            </div>
+          </div>
         </div>
+      </section>
 
-      </div>
+      <!-- ==================== PROJECTS ==================== -->
 
-    </section>
+      <section id="projects" class="section scrollspy">
+        <h3 class="page-title white-text teal">Projects</h3>
 
-<!-- ==================== PLACES TRAVELLED ==================== -->
+        <div class="container">
+          <!-- NEW DYNAMIC PROJECTS -->
+          <div id="projects-container" class="row"></div>
 
-<section id="travel" class="section scrollspy">
-
-  <h3 class="page-title white-text teal">
-    Places Travelled
-  </h3>
-
-  <div class="container">
-
-    <div class="card">
-
-      <div class="card-content">
-
-        <span class="card-title teal-text">
-          Banff National Park
-        </span>
-
-        <p>
-          I have traveled to Banff National Park in Alberta, Canada.
-          It is a beautiful national park known for its stunning mountain landscapes, crystal-clear lakes, and abundant wildlife.
-        </p>
-
-        <br>
-
-        <div class="map-container">
-          <iframe
-            class="travel-map"
-            src="https://www.google.com/maps?q=Banff%20National%20Park%2C%20Alberta%2C%20Canada&z=8&output=embed"
-            title="Map of Banff National Park"
-            allowfullscreen
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+          <button id="load-more-btn" onclick="loadMoreProjects()">
+            Load More
+          </button>
         </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ==================== RESUME ==================== -->
-
-<section id="resume" class="section scrollspy">
-
-  <h3 class="page-title white-text teal">Resume</h3>
-
-  <div class="container flow-text">
-
-    <p>
-      If you would like a copy of my resume, please feel free to contact me by email.
-    </p>
-
-    <p>
-      <a href="mailto:lylashengyak@gmail.com"
-        class="teal-text hoverline">
-        <i class="fa fa-envelope"></i>
-        lylashengyak@gmail.com
-      </a>
-    </p>
-
-  </div>
-
-</section>
-    <!-- ==================== CONTACT ==================== -->
-
-    <section id="contact"
-      class="section scrollspy full-height">
-
-      <h3 class="page-title white-text teal">
-        Contact
-      </h3>
-
-      <div class="container">
-
-
-        <!-- Email -->
-
-        <p>
-
-          <a
-            aria-label="Email Shengya Huang"
-            href="mailto:shengya.huang@mail.utoronto.ca"
-            target="_blank"
-            data-position="top"
-            data-tooltip="Email Shengya"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-
-            <i class="fa fa-envelope"></i>
-
-          </a>
-
-          <a
-            aria-label="Email Shengya Huang"
-            href="mailto:shengya.huang@mail.utoronto.ca"
-            class="hoverline">
-
-            shengya.huang@mail.utoronto.ca
-
-          </a>
-
-        </p>
-
-
-        <!-- GitHub -->
-
-        <p>
-
-          <a
-            aria-label="View Shengya Huang on GitHub"
-            href="https://github.com/ly1ala"
-            target="_blank"
-            data-position="top"
-            data-tooltip="View Shengya on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-
-            <i class="fa fa-github"></i>
-
-          </a>
-
-          <a
-            href="https://github.com/ly1ala"
-            class="hoverline"
-            target="_blank">
-
-            github.com/ly1ala
-
-          </a>
-
-        </p>
-
-
-        <!-- LinkedIn -->
-
-        <p>
-
-          <a
-            aria-label="View Shengya Huang on LinkedIn"
-            href="https://www.linkedin.com/in/shengyaHuang"
-            target="_blank"
-            data-position="top"
-            data-tooltip="View Shengya on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-
-            <i class="fa fa-linkedin"></i>
-
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/shengyaHuang"
-            class="hoverline"
-            target="_blank">
-
-            linkedin.com/in/shengyaHuang
-
-          </a>
-
-        </p>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- ==================== JAVASCRIPT ==================== -->
-
-  <!-- Typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-
-  <script type="text/javascript">
-
-    var typed = new Typed('.typing', {
-
-      strings: [
-        "University of Toronto Student",
-        "Dog Owner",
-        "4th Year Computer Engineering Student",
-      ],
-
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-
-    });
-
-  </script>
-
-
-  <!-- jQuery -->
-  <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-  </script>
-
-
-  <!-- Materialize JavaScript -->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
-  </script>
-
-
-  <script>
-
-    $(document).ready(function () {
-
-      $(".scrollspy").scrollSpy();
-
-      $(".button-collapse").sideNav({
-        menuWidth: 190,
-        edge: "left",
-        closeOnClick: true
+      </section>
+
+      <!-- ==================== SKILLS ==================== -->
+
+      <section id="skills" class="section scrollspy">
+        <h3 class="page-title white-text teal">Skills</h3>
+
+        <div class="container">
+          <!-- Programming Languages -->
+
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Programming Languages</h4>
+
+              <p>
+                C++ &nbsp; | &nbsp; C &nbsp; | &nbsp; Python &nbsp; | &nbsp;
+                Verilog &nbsp; | &nbsp; MATLAB &nbsp; | &nbsp; Java &nbsp; |
+                &nbsp; TypeScript &nbsp; | &nbsp; JavaScript &nbsp; | &nbsp;
+                HTML &nbsp; | &nbsp; SQL &nbsp; | &nbsp; R
+              </p>
+            </div>
+          </div>
+
+          <!-- AI / Machine Learning -->
+
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">AI & Machine Learning</h4>
+
+              <p>
+                PyTorch &nbsp; | &nbsp; NumPy &nbsp; | &nbsp; Convolutional
+                Neural Networks &nbsp; | &nbsp; Single Shot Detection &nbsp; |
+                &nbsp; Google Colab &nbsp; | &nbsp; Kaggle
+              </p>
+            </div>
+          </div>
+
+          <!-- Development Tools -->
+
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Development Tools</h4>
+
+              <p>
+                Git &nbsp; | &nbsp; GitHub &nbsp; | &nbsp; VS Code &nbsp; |
+                &nbsp; CLion &nbsp; | &nbsp; Quartus &nbsp; | &nbsp; ModelSim
+                &nbsp; | &nbsp; FPGA &nbsp; | &nbsp; Jupyter Notebook &nbsp; |
+                &nbsp; Android Studio
+              </p>
+            </div>
+          </div>
+
+          <!-- Other -->
+
+          <div class="card">
+            <div class="card-content">
+              <h4 class="brown-text light">Other Technologies</h4>
+
+              <p>
+                MySQL &nbsp; | &nbsp; OpenStreetMap &nbsp; | &nbsp; GIS &nbsp; |
+                &nbsp; Figma &nbsp; | &nbsp; AutoCAD &nbsp; | &nbsp; Unity
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== EDUCATION ==================== -->
+
+      <section id="education" class="section scrollspy">
+        <h3 class="page-title white-text teal">Education</h3>
+
+        <div class="container">
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <div class="card">
+                <div class="card-content">
+                  <p>
+                    <span class="card-title">
+                      <a
+                        href="https://www.utoronto.ca/"
+                        target="_blank"
+                        class="teal-text hoverline"
+                      >
+                        University of Toronto
+                      </a>
+                    </span>
+                  </p>
+
+                  <p class="brown-text">Toronto, ON, Canada</p>
+
+                  <p>
+                    <b>Degree:</b>
+                    Bachelor of Computer Engineering
+
+                    <br />
+
+                    <b>Minors:</b>
+                    Artificial Intelligence and Business
+
+                    <br />
+
+                    <b>Study Period:</b>
+                    September 2022 - Expected April 2026
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PLACES TRAVELLED ==================== -->
+
+      <section id="travel" class="section scrollspy">
+        <h3 class="page-title white-text teal">Places Travelled</h3>
+
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title teal-text"> Banff National Park </span>
+
+              <p>
+                I have traveled to Banff National Park in Alberta, Canada. It is
+                a beautiful national park known for its stunning mountain
+                landscapes, crystal-clear lakes, and abundant wildlife.
+              </p>
+
+              <br />
+
+              <div class="map-container">
+                <iframe
+                  class="travel-map"
+                  src="https://www.google.com/maps?q=Banff%20National%20Park%2C%20Alberta%2C%20Canada&z=8&output=embed"
+                  title="Map of Banff National Park"
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== MY PET ==================== -->
+
+      <section id="pet" class="section scrollspy">
+        <h3 class="page-title white-text teal">My Pet</h3>
+
+        <div class="container">
+          <div class="card pet-card">
+            <!-- Bagel Photo Album -->
+
+            <div class="pet-carousel">
+              <div class="pet-carousel-window">
+                <div class="pet-carousel-track">
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel1.jpg" alt="Bagel photo 1" />
+                  </div>
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel2.jpg" alt="Bagel photo 2" />
+                  </div>
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel3.jpg" alt="Bagel photo 3" />
+                  </div>
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel4.jpg" alt="Bagel photo 4" />
+                  </div>
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel5.jpg" alt="Bagel photo 5" />
+                  </div>
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel6.jpg" alt="Bagel photo 6" />
+                  </div>
+
+                  <!-- Duplicate photos for continuous scrolling -->
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel1.jpg" alt="Bagel photo 1" />
+                  </div>
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel2.jpg" alt="Bagel photo 2" />
+                  </div>
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel3.jpg" alt="Bagel photo 3" />
+                  </div>
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel4.jpg" alt="Bagel photo 4" />
+                  </div>
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel5.jpg" alt="Bagel photo 5" />
+                  </div>
+
+                  <div class="pet-photo">
+                    <img src="/assets/img/bagel6.jpg" alt="Bagel photo 6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bagel Introduction -->
+            <div class="card-content pet-intro">
+              <div class="pet-intro-header">
+                <span class="card-title"> Meet Bagel </span>
+
+                <span class="pet-paw"> 🐾 </span>
+              </div>
+
+              <!-- Bagel Information -->
+              <div class="pet-details">
+                <div class="pet-detail-item">
+                  <span class="pet-detail-label"> Name </span>
+
+                  <span class="pet-detail-value"> Bagel </span>
+                </div>
+
+                <div class="pet-detail-item">
+                  <span class="pet-detail-label"> Age </span>
+
+                  <span class="pet-detail-value"> 2 years old </span>
+                </div>
+
+                <div class="pet-detail-item">
+                  <span class="pet-detail-label"> Breed </span>
+
+                  <span class="pet-detail-value"> Border Collie </span>
+                </div>
+              </div>
+
+              <!-- About Bagel -->
+              <div class="pet-description">
+                <p>
+                  Bagel is my two-year-old Border Collie and my favorite
+                  adventure companion. He loves exploring the outdoors, going on
+                  walks, and spending time with me.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== RESUME ==================== -->
+
+      <section id="resume" class="section scrollspy">
+        <h3 class="page-title white-text teal">Resume</h3>
+
+        <div class="container flow-text">
+          <p>
+            If you would like a copy of my resume, please feel free to contact
+            me by email.
+          </p>
+
+          <p>
+            <a href="mailto:lylashengyak@gmail.com" class="teal-text hoverline">
+              <i class="fa fa-envelope"></i>
+              lylashengyak@gmail.com
+            </a>
+          </p>
+        </div>
+      </section>
+      <!-- ==================== CONTACT ==================== -->
+
+      <section id="contact" class="section scrollspy full-height">
+        <h3 class="page-title white-text teal">Contact</h3>
+
+        <div class="container">
+          <!-- Email -->
+
+          <p>
+            <a
+              aria-label="Email Shengya Huang"
+              href="mailto:shengya.huang@mail.utoronto.ca"
+              target="_blank"
+              data-position="top"
+              data-tooltip="Email Shengya"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+            >
+              <i class="fa fa-envelope"></i>
+            </a>
+
+            <a
+              aria-label="Email Shengya Huang"
+              href="mailto:shengya.huang@mail.utoronto.ca"
+              class="hoverline"
+            >
+              shengya.huang@mail.utoronto.ca
+            </a>
+          </p>
+
+          <!-- GitHub -->
+
+          <p>
+            <a
+              aria-label="View Shengya Huang on GitHub"
+              href="https://github.com/ly1ala"
+              target="_blank"
+              data-position="top"
+              data-tooltip="View Shengya on GitHub"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+            >
+              <i class="fa fa-github"></i>
+            </a>
+
+            <a
+              href="https://github.com/ly1ala"
+              class="hoverline"
+              target="_blank"
+            >
+              github.com/ly1ala
+            </a>
+          </p>
+
+          <!-- LinkedIn -->
+
+          <p>
+            <a
+              aria-label="View Shengya Huang on LinkedIn"
+              href="https://www.linkedin.com/in/shengyaHuang"
+              target="_blank"
+              data-position="top"
+              data-tooltip="View Shengya on LinkedIn"
+              class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"
+            >
+              <i class="fa fa-linkedin"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/shengyaHuang"
+              class="hoverline"
+              target="_blank"
+            >
+              linkedin.com/in/shengyaHuang
+            </a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+
+    <!-- Typed.js -->
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+    <script type="text/javascript">
+      var typed = new Typed(".typing", {
+        strings: [
+          "University of Toronto Student",
+          "Dog Owner",
+          "4th Year Computer Engineering Student",
+        ],
+
+        loop: true,
+        typeSpeed: 80,
+        backSpeed: 40,
       });
+    </script>
 
-      $(".tooltipped").tooltip();
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-    });
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 
-  </script>
-  <script>
-    const projects = [
-      {
-        title: "FPGA Software Developer",
-        description: "Developed an FPGA-based advanced calculator using Verilog.",
-        image: "/assets/img/project-ml-1.jpg",
-        accomplishments: [
-          "Developed a password-protected advanced calculator in Verilog using Quartus.",
-          "Optimized the Arithmetic Logic Unit data structure to improve processing speed.",
-          "Simulated ALU outputs using ModelSim to validate functionality and performance.",
-          "Designed the ALU to interface with an FPGA board, VGA monitor, PS/2 keyboard, and PS/2 mouse."
-        ],
-        tools: "Verilog, Quartus, ModelSim, FPGA"
-      },
-      {
-        title: "Bridge Load Simulation",
-        description: "Developed a MATLAB simulation to analyze bridge loads and failure conditions.",
-        image: "/assets/img/project-ml-2.jpg",
-        accomplishments: [
-          "Simulated internal shear forces and bending moments in a simply supported bridge using MATLAB.",
-          "Predicted maximum failure load using structural calculations.",
-          "Visualized shear-force and bending-moment diagrams to analyze structural behavior.",
-          "Designed and fabricated a beam prototype for failure-load testing."
-        ],
-        tools: "MATLAB"
-      },
-      {
-        title: "Driveway Lighting System",
-        description: "Designed an automated driveway lighting system using sensors.",
-        image: "/assets/img/project-ml-3.jpg",
-        accomplishments: [
-          "Designed an automated driveway lighting system using sensors.",
-          "Implemented a control algorithm to manage lighting based on ambient light levels.",
-          "Fabricated a prototype and tested its performance in various weather conditions."
-        ],
-        tools: "C, AutoCAD"
-      },
-      {
-        title: "GIS Application",
-        description: "Developed a C++ mapping application for locating public washrooms.",
-        image: "/assets/img/project-ml-4.jpg",
-        accomplishments: [
-          "Developed a C++ mapping application for locating public washrooms.",
-          "Integrated OpenStreetMap data to provide accurate location information.",
-          "Implemented a user-friendly interface using GTK for map navigation."
-        ],
-        tools: "C++, OpenStreetMap, EZGL, GTK",
-        github: "https://github.com/ly1ala/Public-Washroom-Finding-Map"
-      },
-      {
-        title: "Dog Breed Detector",
-        description: "Developed a CNN-based application for identifying dog breeds.",
-        image: "/assets/img/project-ml-5.jpg",
-        accomplishments: [
-          "Developed a CNN-based dog breed identification model.",
-          "Trained the model using the Stanford Dogs dataset.",
-          "Achieved 87% accuracy during real-world testing."
-        ],
-        tools: "Python, PyTorch, CNN, SSD",
-        github: "https://github.com/ly1ala/Dog-Breed-Detector"
-      }
-    ];
+    <script>
+      $(document).ready(function () {
+        $(".scrollspy").scrollSpy();
 
-    let projectsDisplayed = 0;
+        $(".button-collapse").sideNav({
+          menuWidth: 190,
+          edge: "left",
+          closeOnClick: true,
+        });
 
-    function displayProjects(numberToShow) {
+        $(".tooltipped").tooltip();
+      });
+    </script>
+    <script>
+      const projects = [
+        {
+          title: "FPGA Software Developer",
+          description:
+            "Developed an FPGA-based advanced calculator using Verilog.",
+          image: "/assets/img/project-ml-1.jpg",
+          accomplishments: [
+            "Developed a password-protected advanced calculator in Verilog using Quartus.",
+            "Optimized the Arithmetic Logic Unit data structure to improve processing speed.",
+            "Simulated ALU outputs using ModelSim to validate functionality and performance.",
+            "Designed the ALU to interface with an FPGA board, VGA monitor, PS/2 keyboard, and PS/2 mouse.",
+          ],
+          tools: "Verilog, Quartus, ModelSim, FPGA",
+        },
+        {
+          title: "Bridge Load Simulation",
+          description:
+            "Developed a MATLAB simulation to analyze bridge loads and failure conditions.",
+          image: "/assets/img/project-ml-2.jpg",
+          accomplishments: [
+            "Simulated internal shear forces and bending moments in a simply supported bridge using MATLAB.",
+            "Predicted maximum failure load using structural calculations.",
+            "Visualized shear-force and bending-moment diagrams to analyze structural behavior.",
+            "Designed and fabricated a beam prototype for failure-load testing.",
+          ],
+          tools: "MATLAB",
+        },
+        {
+          title: "Driveway Lighting System",
+          description:
+            "Designed an automated driveway lighting system using sensors.",
+          image: "/assets/img/project-ml-3.jpg",
+          accomplishments: [
+            "Designed an automated driveway lighting system using sensors.",
+            "Implemented a control algorithm to manage lighting based on ambient light levels.",
+            "Fabricated a prototype and tested its performance in various weather conditions.",
+          ],
+          tools: "C, AutoCAD",
+        },
+        {
+          title: "GIS Application",
+          description:
+            "Developed a C++ mapping application for locating public washrooms.",
+          image: "/assets/img/project-ml-4.jpg",
+          accomplishments: [
+            "Developed a C++ mapping application for locating public washrooms.",
+            "Integrated OpenStreetMap data to provide accurate location information.",
+            "Implemented a user-friendly interface using GTK for map navigation.",
+          ],
+          tools: "C++, OpenStreetMap, EZGL, GTK",
+          github: "https://github.com/ly1ala/Public-Washroom-Finding-Map",
+        },
+        {
+          title: "Dog Breed Detector",
+          description:
+            "Developed a CNN-based application for identifying dog breeds.",
+          image: "/assets/img/project-ml-5.jpg",
+          accomplishments: [
+            "Developed a CNN-based dog breed identification model.",
+            "Trained the model using the Stanford Dogs dataset.",
+            "Achieved 87% accuracy during real-world testing.",
+          ],
+          tools: "Python, PyTorch, CNN, SSD",
+          github: "https://github.com/ly1ala/Dog-Breed-Detector",
+        },
+      ];
 
-      const container = document.getElementById("projects-container");
+      let projectsDisplayed = 0;
 
-      const end = Math.min(
-        projectsDisplayed + numberToShow,
-        projects.length
-      );
+      function displayProjects(numberToShow) {
+        const container = document.getElementById("projects-container");
 
-      for (let i = projectsDisplayed; i < end; i++) {
+        const end = Math.min(projectsDisplayed + numberToShow, projects.length);
 
-        const project = projects[i];
+        for (let i = projectsDisplayed; i < end; i++) {
+          const project = projects[i];
 
-        container.innerHTML += `
+          container.innerHTML += `
           <div class="col s12 m6 l4">
 
             <div class="card medium">
@@ -1092,7 +995,7 @@
 
                 <ul>
                   ${project.accomplishments
-                    .map(item => `<li>${item}</li>`)
+                    .map((item) => `<li>${item}</li>`)
                     .join("")}
 
                   <li>
@@ -1122,27 +1025,22 @@
 
           </div>
         `;
+        }
+
+        projectsDisplayed = end;
+
+        if (projectsDisplayed >= projects.length) {
+          document.getElementById("load-more-btn").style.display = "none";
+        }
       }
 
-      projectsDisplayed = end;
+      function loadMoreProjects() {
+        displayProjects(projects.length - projectsDisplayed);
+      }
 
-      if (projectsDisplayed >= projects.length) {
-      document.getElementById("load-more-btn").style.display = "none";
-    }
-  }
-
-  function loadMoreProjects() {
-    displayProjects(projects.length - projectsDisplayed);
-  }
-
-  document.addEventListener("DOMContentLoaded", function () {
-    displayProjects(2);
-  });
-</script>
-
-
-
-
-</body>
-
+      document.addEventListener("DOMContentLoaded", function () {
+        displayProjects(2);
+      });
+    </script>
+  </body>
 </html>
